@@ -13,7 +13,7 @@ public class Fibo {
 			}
 			/*
 			 * condicao de parada, o indice e o numero inserido pelo usuario
-			 * e ele subtrai ate 0
+			 * e ele subtrai ate 0, o indice 0 do fibonaci deve ser 1
 			 */
 			serie= serie.substring(1);
 			// gambiarra, nao sei fazer sem virgula
@@ -27,7 +27,10 @@ public class Fibo {
 			
 		return seqFib(numB+numA, numA, i-1, serie);
 		/*
-		 * 
+		 * o primeiro valor se torna a soma dos dois, como comeca com 0 a soma originalmente e 1, 
+                    mas avanca para 1+1=2, 2+1 = 3..... O segundo valor se torna o primeiro, que comecou maior e
+		    depois se tornou a soma, o indice subtrai ate 0
+   
 		 */
 	}
 	
